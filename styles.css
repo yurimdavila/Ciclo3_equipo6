@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-image: url("images/cervheader.jpg");
+    margin:0px;
+}
