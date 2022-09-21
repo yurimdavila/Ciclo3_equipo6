@@ -2,9 +2,106 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 header{
-    background-image: url("images/cervheader.jpg");
+    background-color:rgba(10, 2, 66, 0.897);
     margin:0px;
+    height:100px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-image: url("images/fondo.png");
+}
+
+section {
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 12px 15px;
+    border:1px solid #ddd;
+    text-align:center;
+    font-size: smaller;
+}
+th{
+    background-color: #6D6D95;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(174, 174, 179);
+}
+
+#Edit{
+    position: relative;
+    left: 600px;
+}
+
+#Rate{
+    position:relative;
+    left: 625px;
+}
+
+.container-table{
+    overflow:auto;
+}
+
+footer{
+    background-color:rgba(10, 2, 66, 0.897);
+    margin: 50px 0 0 0;
+    height: 70px;
+    text-align:center;
+    padding: 1em 0;
+    bottom: 0;
+}
+
+.data{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.management{
+    margin:auto;
+    padding:20px;
+    list-style:none;
+    margin-left:0px;
+}
+
+.tab{
+    list-style:none;
+    margin-left:-50px;
+}
+
+.management li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color:black;
+    font-weight: bold;
+    font-size:1.5em;
+    display:block;
+}
+
+.management li a:hover{
+    background-color: #434343;
+}
+
+.management li ul {
+    display:none;
+}
+
+.management li:hover > ul {
+    display:block;    
 }
