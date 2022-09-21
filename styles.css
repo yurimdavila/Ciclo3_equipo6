@@ -1,22 +1,13 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-header{
-    background-color:rgba(10, 2, 66, 0.897);
-    margin:0px;
-    height:100px;
-}
+
+
 
 body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
     background-image: url("images/fondo.png");
+    background-size: cover;
 }
 
 section {
@@ -45,16 +36,6 @@ tbody tr:nth-child(even){
     background-color: rgb(174, 174, 179);
 }
 
-#Edit{
-    position: relative;
-    left: 600px;
-}
-
-#Rate{
-    position:relative;
-    left: 625px;
-}
-
 .container-table{
     overflow:auto;
 }
@@ -66,6 +47,9 @@ footer{
     text-align:center;
     padding: 1em 0;
     bottom: 0;
+    margin-top:  50vh;
+    color: white;
+    font-weight: 400;
 }
 
 .data{
@@ -104,4 +88,65 @@ footer{
 
 .management li:hover > ul {
     display:block;    
+}
+
+/* Botones e input*/
+
+.data button, .data input, main section:first-child button{
+    height: 25px;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: rgba(10, 2, 66, 0.897);
+    border: rgba(10, 2, 66, 0.897) solid 1px;
+    color: aliceblue;
+    transition-duration: 1s;
+}
+
+.data button:hover, .data input:hover, main section:first-child button:hover{
+    background-color: #6D6D95;
+    border: #6D6D95 solid 1px;
+}
+
+.data input:focus{
+    background-color: #6D6D95;
+    border: #6D6D95 solid 1px;
+}
+
+
+
+/* Header */
+
+header{
+    background-color:rgba(10, 2, 66, 0.897);
+    margin:0px;
+    height:100px;
+    overflow: hidden;
+}
+
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Ubicacion de los botones */
+
+
+.field{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    overflow: auto;
+}
+
+.field div:last-child{
+    justify-self: flex-start;
+}
+
+main section:first-child{
+    margin: 10px;
 }
