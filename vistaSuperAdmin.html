@@ -13,147 +13,151 @@
 <body>
     <header>  
         <div class="container">
-            <h1>Cervecerías Unidas de Colombia</h1>
+            <h1>Compañía de las Cervecerías Unidas</h1>
             <h3>¡Hola, Nombre_SuperAdministrador!</h3>
         </div>
     </header> 
 
     <main>
-        <ul class="management">
-            <li><a href="">Gestión de administradores</a>
-                <ul>
-                    <li class="tab">
-                        <section>
-                            <h4><button type="button" id="Add">Agregar administrador</button></h4>
-                        </section>
+        <section>
+            <h2>Gestión de administradores</h2>
+            <h4><button type="button" id="Add">Agregar administrador</button></h4>
+        </section>
 
-                        <section>
-                            <h3>Base de datos de administradores</h3>
-                
-                            <div class="field" id="searchform">
-                                <input type="text" id="searchterm" placeholder="Buscar" />
-                                <button type="button" id="search">¡Buscar!</button>
-                                <button type="button" id="Edit">Editar administrador</button>
-                            </div>
-                            <br>
-                            <table>
-                                <tr>
-                                    <th><input type="checkbox" name="check" id=""></th>
-                                    <th>Cédula</th>
-                                    <th>Nombres</th>
-                                    <th>Apellidos</th>
-                                    <th>Usuario</th>
-                                    <th>Correo electrónico</th>
-                                    <th>Fecha de nacimiento</th>
-                                    <th>Cargo</th>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="check" id=""></td>
-                                    <td>25653123</td>
-                                    <td>Jose</td>
-                                    <td>Perez</td>
-                                    <td>jperez</td>
-                                    <td>jperez@cerveceria.com.co</td>
-                                    <td>23/12/1990</td>
-                                    <td>administrador</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="check" id=""></td>
-                                    <td>1040063458</td>
-                                    <td>Juan</td>
-                                    <td>Torres</td>
-                                    <td>jtorres</td>
-                                    <td>jtorres@cerveceria.com.co</td>
-                                    <td>28/06/1990</td>
-                                    <td>administrador</td>
-                                </tr>
-                            </table>
-                        </section>
-                    </li>
-                </ul>
-            </li>
+        <section class="data">
+            <h3>Base de datos de administradores</h3>
 
-
-            <li><a href="">Gestión de empleados</a>
-                <ul>
-                    <li class="tab">
-                        <section>
-                            <h4><button type="button" id="Add">Agregar empleado</button></h4>
-                        </section>
-
-                        <section class="data">
-                            <h3>Base de datos de empleados</h3>
-                
-                            <div class="field" id="searchform">
-                                <input type="text" id="searchterm" placeholder="Buscar" />
-                                <button type="button" id="search">¡Buscar!</button>
-                                <button type="button" id="Edit">Editar empleado</button>
-                                <button type="button" id="Rate">Calificar empleado</button>
-                            </div>
-                            <br>
-                            <div class="container-table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th><input type="checkbox" name="check" id=""></th>
-                                            <th>Cédula</th>
-                                            <th>Nombres</th>
-                                            <th>Apellidos</th>
-                                            <th>Usuario</th>
-                                            <th>Correo electrónico</th>
-                                            <th>Fecha de nacimiento</th>
-                                            <th>Tipo de contrato</th>
-                                            <th>Fecha de ingreso</th>
-                                            <th>Fecha término de contrato</th>
-                                            <th>Cargo</th>
-                                            <th>Dependencia</th>
-                                            <th>Salario</th>
-                                            <th>Ver calificación</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="checkbox" name="check" id=""></td>
-                                            <td>25653234</td>
-                                            <td>Maria Fernanda</td>
-                                            <td>Rodriguez</td>
-                                            <td>mrodriguez</td>
-                                            <td>mrodriguez@cerveceria.com.co</td>
-                                            <td>23/12/1990</td>
-                                            <td>término indefinido</td>
-                                            <td>19/09/2022</td>
-                                            <td>indefinido</td>
-                                            <td>SST</td>
-                                            <td>Calidad</td>
-                                            <td>3500000</td> 
-                                            <td><button type="button" id="Watch">Ver</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" name="check" id=""></td>
-                                            <td>1038653234</td>
-                                            <td>Camila</td>
-                                            <td>Torres</td>
-                                            <td>ctorres</td>
-                                            <td>ctorres@cerveceria.com.co</td>
-                                            <td>28/05/1995</td>
-                                            <td>término fijo</td>
-                                            <td>19/09/2022</td>
-                                            <td>31/12/2022</td>
-                                            <td>Auxiliar contable</td>
-                                            <td>Tesorería</td>
-                                            <td>2500000</td>
-                                            <td><button type="button" id="Watch">Ver</button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </section>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+            <div class="field" id="searchform">
+                <div>
+                    <input type="text" id="searchterm" placeholder="Buscar" />
+                    <button type="button" id="search">¡Buscar!</button>
+                </div>
+                <div>                
+                    <button type="button" id="Edit">Editar administrador</button>
+                </div>
+            </div>
+            <br>
+            <div class="container-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" name="check" id=""></th>
+                            <th>Cédula</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Usuario</th>
+                            <th>Correo electrónico</th>
+                            <th>Fecha de nacimiento</th>
+                            <th>Cargo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="check" id=""></td>
+                            <td>25653123</td>
+                            <td>Jose</td>
+                            <td>Perez</td>
+                            <td>jperez</td>
+                            <td>jperez@cerveceria.com.co</td>
+                            <td>23/12/1990</td>
+                            <td>administrador</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="check" id=""></td>
+                            <td>1040063458</td>
+                            <td>Juan</td>
+                            <td>Torres</td>
+                            <td>jtorres</td>
+                            <td>jtorres@cerveceria.com.co</td>
+                            <td>28/06/1990</td>
+                            <td>administrador</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
     </main>
+
+    <main>
+        <section>
+            <h2>Gestión de empleados</h2>
+            <h4><button type="button" id="Add">Agregar empleado</button></h4>
+        </section>
+
+        <section class="data">
+            <h3>Base de datos de empleados</h3>
+
+            <div class="field" id="searchform">
+                <div>
+                    <input type="text" id="searchterm" placeholder="Buscar" />
+                    <button type="button" id="search">¡Buscar!</button>
+                </div>
+                <div>
+                    <button type="button" id="Edit">Editar empleado</button>
+                    <button type="button" id="Rate">Calificar empleado</button>
+                </div>
+            </div>
+            <br>
+            <div class="container-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" name="check" id=""></th>
+                            <th>Cédula</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Usuario</th>
+                            <th>Correo electrónico</th>
+                            <th>Fecha de nacimiento</th>
+                            <th>Tipo de contrato</th>
+                            <th>Fecha de ingreso</th>
+                            <th>Término de contrato</th>
+                            <th>Cargo</th>
+                            <th>Dependencia</th>
+                            <th>Salario</th>
+                            <th>Ver calificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="check" id=""></td>
+                            <td>25653234</td>
+                            <td>Maria Fernanda</td>
+                            <td>Rodriguez</td>
+                            <td>mrodriguez</td>
+                            <td>mrodriguez@cerveceria.com.co</td>
+                            <td>23/12/1990</td>
+                            <td>término indefinido</td>
+                            <td>19/09/2022</td>
+                            <td>indefinido</td>
+                            <td>SST</td>
+                            <td>Calidad</td>
+                            <td>3500000</td> 
+                            <td><button type="button" id="Watch">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="check" id=""></td>
+                            <td>1038653234</td>
+                            <td>Camila</td>
+                            <td>Torres</td>
+                            <td>ctorres</td>
+                            <td>ctorres@cerveceria.com.co</td>
+                            <td>28/05/1995</td>
+                            <td>término fijo</td>
+                            <td>19/09/2022</td>
+                            <td>31/12/2022</td>
+                            <td>Auxiliar contable</td>
+                            <td>Tesorería</td>
+                            <td>2500000</td>
+                            <td><button type="button" id="Watch">Ver</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
 
     <footer>
         <p>Política de privacidad de datos</p>
